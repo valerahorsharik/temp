@@ -1,0 +1,36 @@
+{
+  "name": "capi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node_modules/babel/bin/babel.js src --source-maps --out-dir dist",
+    "start": "node_modules/nodemon/bin/nodemon.js -- node_modules/babel/bin/babel-node.js ./server.js",
+    "build-front": "node_modules/babel/bin/babel-node.js ./node_modules/webpack/bin/webpack.js --config webpack.config.js --progress --profile --colors --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefix": "^1.0.1",
+    "babel": "5.8.29",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015-webpack": "^6.4.3",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "flux": "^3.1.2",
+    "form-data": "^2.2.0",
+    "method-override": "^2.3.9",
+    "node-env-file": "^0.1.8",
+    "node-fetch": "^1.7.1",
+    "nodemon": "^1.11.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^4.1.1",
+    "webpack": "^2.6.1"
+  }
+}
